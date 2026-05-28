@@ -1,0 +1,41 @@
+name: Deploy Hexo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 当推送到 main 分支时触发工作流
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.12.2'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Clean previous build
+        run: npx hexo clean
+
+      - name: Generate static files
+        run: npx hexo generate
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Deploy to GitHub Pages
+        run: npx hexo deploy

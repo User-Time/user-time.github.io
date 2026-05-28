@@ -103,3 +103,4 @@ document.addEventListener('DOMContentLoaded', () => {
   translateInitialization()
   btf.addGlobalFn('pjaxComplete', translateInitialization, 'translateInitialization')
 })
+document.getElementById("page-header").style["backgroundImage"] = "";

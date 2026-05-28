@@ -1,39 +1,9 @@
 ---
-title: Hello World
+title: 博客复活！
 abbrlink: 4a17b156
+cover: https://s1.imagehub.cc/images/2024/08/23/b8404f3adb861cb56dee9136adaec0d7.th.webp
+date: 2024-08-22 20:37:00
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
-
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+Time's Blog 更名为 Time's Domain,
+上次因为忘记续费被直接清掉了（），于是这次直接把博客扔到Github上面了

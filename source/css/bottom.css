@@ -1,41 +1,58 @@
-#nav{
-    height: 7%;
-    padding: 0px 15%;
+#nav {
+  height: 7%;
+  padding: 0px 15%;
 }
-#nav .site-name{
-    font-size: 1.5em;
+#nav .site-name {
+  font-size: 1.5em;
 }
-#nav .site-page{
-    font-size: 1.0em;
+#nav .site-page {
+  font-size: 1em;
 }
-#page-header, #page-header:not(.not-top-img):before, #page-header,#footer{
-    background-color:transparent
+#page-header,
+#page-header:not(.not-top-img):before,
+#page-header,
+#footer {
+  background-color: transparent !important;
+  background-image: none !important;
 }
 
-#nav #blog-info .site-icon{
-    margin-right: 1em;
-    border-radius: 10px;
-    width: 2.5em;
-    height: auto;
+#nav #blog-info .site-icon {
+  margin-right: 1em;
+  border-radius: 10px;
+  width: 2.5em;
+  height: auto;
 }
-#post-info>#post-meta,#post-info{
-    text-align: center;
+#post-info > #post-meta,
+#post-info {
+  text-align: center;
 }
-html[data-theme="dark"] div#page,
+html[data-theme="dark"] div#page:not(.nc),
 html[data-theme="dark"] div#aside-content > div:not(.sticky_layout),
 html[data-theme="dark"] div#aside-content > .sticky_layout > div,
-html[data-theme="dark"] div.recent-post-item
-{
-    background: #121212b0;
+html[data-theme="dark"] #recent-posts .recent-post-item,
+html[data-theme="dark"] .layout > div:first-child:not(.nc) {
+  background: #121212b0;
+}
+html[data-theme="dark"] #recent-posts > div > div {
+  background: #121212b0;
 }
 
-html[data-theme="light"] div#page,
+html[data-theme="light"] div#page:not(.nc),
 html[data-theme="light"] div#aside-content > div:not(.sticky_layout),
 html[data-theme="light"] div#aside-content > .sticky_layout > div,
-html[data-theme="light"] .recent-post-item
- {
-    background: #ffffffbf;
+html[data-theme="light"] #recent-posts .recent-post-item,
+html[data-theme="light"] .layout > div:first-child:not(.nc) {
+  background: #ffffffbf;
 }
-.avatar-img img:hover{
-    transform: rotate3d(0, 1, 0, 180deg);
+html[data-theme="light"] #recent-posts > div > div {
+  background: #ffffffbf;
 }
+
+.avatar-img img:hover {
+  transform: rotate3d(0, 1, 0, 180deg);
+}
+
+#article-container a {
+  text-shadow: 0 0px 5px #ffffff;
+}
+

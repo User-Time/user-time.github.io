@@ -1,12 +1,12 @@
 # Hexo 配置文件
 ## 文档: https://hexo.io/docs/configuration.html
 ## 源码: https://github.com/hexojs/hexo/
-
+fancybox: true
 # 站点设置
 title: Time's Domain # 站点标题
 subtitle: '时域' # 站点副标题
-description: '欢迎来到 时域, 这里是Time的博客, 平常会分享一些心得，以及一些代码' # 站点描述
-keywords: 编程,linux,python,Code,时域,Time's Domain,Time's Blog,博客,hexo,Time的博客,工藤,# 关键词
+description: '欢迎来到 时域, 会分享一些平常的心得以及一些代码' # 站点描述
+keywords: 编程,linux,python,Code,时域,Python,Time's Domain,Time's Blog,博客,Time的博客,工藤,物联网,MicroPython,hexo
 author: Time # 作者名
 language: zh-CN # 语言
 timezone: 'Asia/Shanghai' # 时区
@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai' # 时区
 # URL设置
 ## 设置你的站点URL。例如，如果使用GitHub Page，URL设置为 'https://username.github.io/project'
 url: https://time-blog.top # 站点的URL
-permalink: posts/:abbrlink/ # 永久链接格式（年份/月/日/标题）
+permalink: posts/:abbrlink.html # 永久链接格式（年份/月/日/标题）
 permalink_defaults: # 永久链接的默认值
 pretty_urls: # 美化URL的设置
   trailing_index: true # 设置为false以移除永久链接中的 'index.html' 后缀
